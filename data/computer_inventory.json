@@ -48,5 +48,23 @@
         "Status": "Hardware Test",
         "Notes": "Site: KMDW",
         "Photos": []
+    },
+    {
+        "Item ID": "ITEM-0004",
+        "Program": "FAA",
+        "Serial Number": "",
+        "Manufacturer": "MSI",
+        "Model": "INFINITE",
+        "Service Tag": "",
+        "Ticket Number": "",
+        "RMA Number": "MSBZ01OBA0100696",
+        "Date Received": "07/09/2026",
+        "Date Returned": "",
+        "Issue": "GPU",
+        "Status": "Waiting for Parts",
+        "Notes": "Site: KMDW",
+        "Photos": [
+            "data\\photo_attachments\\ITEM-0004\\8f37fbe8-2789-49aa-8913-c65a725ccfc1.jpg"
+        ]
     }
 ]
