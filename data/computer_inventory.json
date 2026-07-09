@@ -1,18 +1,1 @@
-[
-    {
-        "Item ID": "ITEM-0004",
-        "Program": "USAF",
-        "Serial Number": "23324234",
-        "Manufacturer": "Dell",
-        "Model": "XE2",
-        "Service Tag": "3333333",
-        "Ticket Number": "",
-        "RMA Number": "",
-        "Date Received": "",
-        "Date Returned": "",
-        "Issue": "GPU",
-        "Status": "Awaiting Testing",
-        "Notes": "",
-        "Photos": []
-    }
-]
+[]
