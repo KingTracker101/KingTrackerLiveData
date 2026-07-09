@@ -13,7 +13,9 @@
         "Issue": "GPU",
         "Status": "Awaiting Testing",
         "Notes": "gchngdfchdhbn",
-        "Photos": ""
+        "Photos": [
+            "data\\photo_attachments\\ITEM-0002\\the-burnt-peanut.webp"
+        ]
     },
     {
         "Item ID": "ITEM-0003",
