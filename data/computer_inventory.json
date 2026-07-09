@@ -66,5 +66,21 @@
         "Status": "Awaiting Testing",
         "Notes": "",
         "Photos": []
+    },
+    {
+        "Item ID": "ITEM-0006",
+        "Program": "USAF",
+        "Serial Number": "23425",
+        "Manufacturer": "Dell",
+        "Model": "XE2",
+        "Service Tag": "2342342",
+        "Ticket Number": "",
+        "RMA Number": "",
+        "Date Received": "",
+        "Date Returned": "",
+        "Issue": "GPU",
+        "Status": "Awaiting Testing",
+        "Notes": "",
+        "Photos": []
     }
 ]
