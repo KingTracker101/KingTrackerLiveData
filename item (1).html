@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KingTracker Item Lookup</title>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+  }
+  .card {
+    max-width: 760px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  }
+  h1 {
+    margin-top: 0;
+    color: #1f4e79;
+  }
+  .status {
+    padding: 12px;
+    border-radius: 8px;
+    margin: 12px 0;
+    background: #eef3f8;
+  }
+  .error {
+    background: #ffecec;
+    color: #8a0000;
+  }
+  .success {
+    background: #e9f8ef;
+    color: #145c2e;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+  }
+  td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    vertical-align: top;
+  }
+  td:first-child {
+    font-weight: bold;
+    width: 35%;
+    color: #333;
+  }
+  .small {
+    color: #666;
+    font-size: 13px;
+    word-break: break-all;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>KingTracker Item Lookup</h1>
+  <div id="status" class="status">Loading inventory data...</div>
+  <div id="result"></div>
+</div>
+
+<script>
+const statusBox = document.getElementById("status");
+const resultBox = document.getElementById("result");
+
+function clean(value) {
+  return String(value ?? "").trim().toUpperCase();
+}
+
+function showStatus(message, type = "") {
+  statusBox.className = "status " + type;
+  statusBox.innerHTML = message;
+}
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+async function loadItem() {
+  const params = new URLSearchParams(window.location.search);
+  const requestedId = params.get("id");
+
+  if (!requestedId) {
+    showStatus("No item ID was provided in the URL. Example: <b>item.html?id=ITEM-0004</b>", "error");
+    return;
+  }
+
+  const jsonUrl = "data/computer_inventory.json?cache=" + Date.now();
+
+  try {
+    showStatus(
+      "Searching for: <b>" + escapeHtml(requestedId) + "</b><br>" +
+      "<span class='small'>Loading: " + escapeHtml(jsonUrl) + "</span>"
+    );
+
+    const response = await fetch(jsonUrl, { cache: "no-store" });
+
+    if (!response.ok) {
+      showStatus("Could not load inventory JSON. HTTP status: " + response.status, "error");
+      return;
+    }
+
+    const data = await response.json();
+
+    if (!Array.isArray(data)) {
+      showStatus("Inventory JSON loaded, but it is not an array/list.", "error");
+      return;
+    }
+
+    const wanted = clean(requestedId);
+
+    const item = data.find(row => {
+      return clean(row["Item ID"]) === wanted ||
+             clean(row["Asset Tag"]) === wanted ||
+             clean(row["Inventory ID"]) === wanted ||
+             clean(row["ID"]) === wanted ||
+             clean(row["Serial Number"]) === wanted ||
+             clean(row["Service Tag"]) === wanted;
+    });
+
+    if (!item) {
+      const ids = data.map(row => row["Item ID"]).filter(Boolean).join(", ");
+      showStatus(
+        "Item not found.<br>" +
+        "Searched for: <b>" + escapeHtml(requestedId) + "</b><br>" +
+        "Records loaded: <b>" + data.length + "</b><br>" +
+        "<span class='small'>Known Item IDs: " + escapeHtml(ids || "none") + "</span>",
+        "error"
+      );
+      return;
+    }
+
+    showStatus(
+      "Item found: <b>" + escapeHtml(item["Item ID"] || requestedId) + "</b><br>" +
+      "Records loaded: <b>" + data.length + "</b>",
+      "success"
+    );
+
+    let html = "<table>";
+    for (const key of Object.keys(item)) {
+      let value = item[key];
+
+      if (Array.isArray(value)) {
+        value = value.length ? value.join("<br>") : "";
+      }
+
+      html += "<tr><td>" + escapeHtml(key) + "</td><td>" + escapeHtml(value) + "</td></tr>";
+    }
+    html += "</table>";
+
+    resultBox.innerHTML = html;
+
+  } catch (error) {
+    showStatus("Error loading item: " + escapeHtml(error.message), "error");
+  }
+}
+
+loadItem();
+</script>
+</body>
+</html>
