@@ -1,1 +1,18 @@
-[]
+[
+    {
+        "Item ID": "ITEM-0001",
+        "Program": "FAA",
+        "Serial Number": "",
+        "Manufacturer": "MSI",
+        "Model": "INFINITE",
+        "Service Tag": "",
+        "Ticket Number": "645641",
+        "RMA Number": "MSBZ01OAA0105757",
+        "Date Received": "07/09/2026",
+        "Date Returned": "",
+        "Issue": "Other",
+        "Status": "Hardware Test",
+        "Notes": "Site: KANC",
+        "Photos": []
+    }
+]
