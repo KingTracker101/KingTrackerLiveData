@@ -14,5 +14,21 @@
         "Status": "Hardware Test",
         "Notes": "Site: KANC",
         "Photos": []
+    },
+    {
+        "Item ID": "ITEM-0002",
+        "Program": "FAA",
+        "Serial Number": "",
+        "Manufacturer": "MSI",
+        "Model": "INFINITE",
+        "Service Tag": "",
+        "Ticket Number": "645121",
+        "RMA Number": "MSBZ02O5S0109348",
+        "Date Received": "07/09/2026",
+        "Date Returned": "",
+        "Issue": "Other",
+        "Status": "Hardware Test",
+        "Notes": "",
+        "Photos": []
     }
 ]
