@@ -1,23 +1,5 @@
 [
     {
-        "Item ID": "ITEM-0002",
-        "Program": "USAF",
-        "Serial Number": "45452",
-        "Manufacturer": "Dell",
-        "Model": "XE2",
-        "Service Tag": "7777777",
-        "Ticket Number": "444444",
-        "RMA Number": "",
-        "Date Received": "06/26/2026",
-        "Date Returned": "11/19/2026",
-        "Issue": "GPU",
-        "Status": "Awaiting Testing",
-        "Notes": "gchngdfchdhbn",
-        "Photos": [
-            "data\\photo_attachments\\ITEM-0002\\the-burnt-peanut.webp"
-        ]
-    },
-    {
         "Item ID": "ITEM-0003",
         "Program": "USAF",
         "Serial Number": "546666",
@@ -38,7 +20,7 @@
     {
         "Item ID": "ITEM-0004",
         "Program": "USAF",
-        "Serial Number": "",
+        "Serial Number": "23324234",
         "Manufacturer": "Dell",
         "Model": "XE2",
         "Service Tag": "3333333",
