@@ -1,70 +1,54 @@
 [
     {
-        "Item ID": "ITEM-0001",
-        "Program": "FAA",
-        "Serial Number": "",
-        "Manufacturer": "MSI",
-        "Model": "INFINITE",
-        "Service Tag": "",
-        "Ticket Number": "645641",
-        "RMA Number": "MSBZ01OAA0105757",
-        "Date Received": "07/09/2026",
-        "Date Returned": "",
-        "Issue": "GPU",
-        "Status": "Waiting for Parts",
-        "Notes": "Site: KANC\nGPU Power cable was melted refer to photo. GPU still works.",
-        "Photos": [
-            "data\\photo_attachments\\ITEM-0001\\5dd7c11d-0183-4c98-a6d8-d426d2242706.jpg"
-        ]
-    },
-    {
         "Item ID": "ITEM-0002",
-        "Program": "FAA",
-        "Serial Number": "",
-        "Manufacturer": "MSI",
-        "Model": "INFINITE",
-        "Service Tag": "",
-        "Ticket Number": "645121",
-        "RMA Number": "MSBZ02O5S0109348",
-        "Date Received": "07/09/2026",
-        "Date Returned": "",
-        "Issue": "Other",
-        "Status": "Waiting for Parts",
-        "Notes": "No display on GPU. No note damage to the power cable.",
-        "Photos": []
+        "Program": "USAF",
+        "Serial Number": "45452",
+        "Manufacturer": "Dell",
+        "Model": "XE2",
+        "Service Tag": "7777777",
+        "Ticket Number": "444444",
+        "RMA Number": "",
+        "Date Received": "06/26/2026",
+        "Date Returned": "11/19/2026",
+        "Issue": "GPU",
+        "Status": "Awaiting Testing",
+        "Notes": "gchngdfchdhbn",
+        "Photos": [
+            "data\\photo_attachments\\ITEM-0002\\the-burnt-peanut.webp"
+        ]
     },
     {
         "Item ID": "ITEM-0003",
-        "Program": "FAA",
-        "Serial Number": "",
-        "Manufacturer": "MSI",
-        "Model": "INFINITE",
-        "Service Tag": "",
+        "Program": "USAF",
+        "Serial Number": "546666",
+        "Manufacturer": "Dell",
+        "Model": "XE2",
+        "Service Tag": "7777777",
         "Ticket Number": "",
-        "RMA Number": "MSBZ01O9S0104918",
-        "Date Received": "07/09/2026",
-        "Date Returned": "",
+        "RMA Number": "",
+        "Date Received": "06/28/2026",
+        "Date Returned": "10/17/2026",
         "Issue": "GPU",
         "Status": "Hardware Test",
-        "Notes": "Site: KMDW\n\nNo display.",
-        "Photos": []
+        "Notes": "",
+        "Photos": [
+            "data\\photo_attachments\\ITEM-0003\\the-burnt-peanut-burnt.gif"
+        ]
     },
     {
         "Item ID": "ITEM-0004",
-        "Program": "FAA",
-        "Serial Number": "",
-        "Manufacturer": "MSI",
-        "Model": "INFINITE",
-        "Service Tag": "",
+        "Program": "USAF",
+        "Serial Number": "23324234",
+        "Manufacturer": "Dell",
+        "Model": "XE2",
+        "Service Tag": "3333333",
         "Ticket Number": "",
-        "RMA Number": "MSBZ01OBA0100696",
-        "Date Received": "07/09/2026",
+        "RMA Number": "",
+        "Date Received": "",
         "Date Returned": "",
         "Issue": "GPU",
-        "Status": "Waiting for Parts",
-        "Notes": "Site: KMDW",
-        "Photos": [
-            "data\\photo_attachments\\ITEM-0004\\8f37fbe8-2789-49aa-8913-c65a725ccfc1.jpg"
-        ]
+        "Status": "Awaiting Testing",
+        "Notes": "a",
+        "Photos": []
     }
 ]
