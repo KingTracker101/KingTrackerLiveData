@@ -84,5 +84,21 @@
         "Photos": [
             "data\\photo_attachments\\ITEM-0005\\c0b025b5-04d5-45c0-a465-db22e12de3cb.jpg"
         ]
+    },
+    {
+        "Item ID": "ITEM-0006",
+        "Program": "FAA",
+        "Serial Number": "",
+        "Manufacturer": "MSI",
+        "Model": "INFINITE",
+        "Service Tag": "",
+        "Ticket Number": "",
+        "RMA Number": "MSBZ01OAA0105843",
+        "Date Received": "07/13/2026",
+        "Date Returned": "",
+        "Issue": "GPU",
+        "Status": "Waiting for Parts",
+        "Notes": "",
+        "Photos": []
     }
 ]
