@@ -102,5 +102,21 @@
         "Photos": [
             "data\\photo_attachments\\ITEM-0006\\39a7cff5-43a7-4317-9cef-0c6472b0dbb3.jpg"
         ]
+    },
+    {
+        "Item ID": "ITEM-0007",
+        "Program": "FAA",
+        "Serial Number": "",
+        "Manufacturer": "MSI",
+        "Model": "INFINITE",
+        "Service Tag": "",
+        "Ticket Number": "",
+        "RMA Number": "MSBZ01O2S0102600",
+        "Date Received": "07/13/2026",
+        "Date Returned": "",
+        "Issue": "CPU",
+        "Status": "Waiting for Parts",
+        "Notes": "Failed CPU.",
+        "Photos": []
     }
 ]
