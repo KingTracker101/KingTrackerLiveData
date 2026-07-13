@@ -118,5 +118,21 @@
         "Status": "Waiting for Parts",
         "Notes": "Failed CPU.",
         "Photos": []
+    },
+    {
+        "Item ID": "ITEM-0008",
+        "Program": "FAA",
+        "Serial Number": "",
+        "Manufacturer": "MSI",
+        "Model": "INFINITE",
+        "Service Tag": "",
+        "Ticket Number": "",
+        "RMA Number": "MSBZ01O5S0108998",
+        "Date Received": "",
+        "Date Returned": "",
+        "Issue": "GPU",
+        "Status": "Awaiting Testing",
+        "Notes": "",
+        "Photos": []
     }
 ]
